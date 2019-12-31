@@ -1,3 +1,8 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
 .wrapper {
     float: left;
     width: 100%;
@@ -45,13 +50,26 @@ li a {
     color: #333333;
     text-align: center;
     padding: 1em;  
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
 }
 
-li a:hover {
+a { 
+    text-decoration: none;
+}
+
+a:hover { 
     text-decoration: underline;
-    color: #111111;
+}
+
+.sign-in a {
+    border: 1px solid #4285f4;
+    background: #4285f4;
+    font-weight: bold;
+    outline: none;
+    color: #FFF;
+    padding: .5em 1em;
+    border-radius: .5em;
+    margin: .5em;
 }
 
 .search {
@@ -61,11 +79,29 @@ li a:hover {
     margin: 0 auto;
 }
 
+
+.search::before {
+    opacity: 0;
+    box-shadow: 1em 4em 12em rgba(0,0,0,.35);
+}
+
+.search:hover: {
+    box-shadow: 1em 4em 12em rgba(0,0,0,.35);
+}
+
+
 .searchIcon {
     float: left;
     display: inline-block;
     padding: 1em;
-    color: #333333;
+    color: #9AA0A6;
+    fill: currentColor;
+}
+.voiceIcon {
+    float: right;
+    padding: 1em;
+    color: lightskyblue;
+    fill: currentColor;
 }
 
 input[type=search] {
@@ -76,7 +112,66 @@ input[type=search] {
 }
 
 input[type=submit] {
-    background: #FFF;
-    padding: 1.5em;
-    margin: 0;
+    background: #f2f2f2;
+    padding: 1em;
+    margin: 1em .5em;
     border: 0px !important;
+    border-radius: .5em;
+    color: #5F6368;
+
+}
+
+.footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    background:#f2f2f2;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right;
+}
+
+@media only screen and (max-width: 479px) {
+    .wrapper-content {
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+        overflow-x: auto;
+    }
+
+    .mobhide {
+        display: none;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .search {
+        width: 100%;
+        height: auto;
+    }
+
+    .searchIcon {
+        float: right;
+        display: inline-block;
+        padding: 1em;
+        color: #FFF;
+        fill: currentColor;
+        background: #3b78e7;
+    }
+    .voiceIcon {
+        float: right;
+        padding: 1em;
+        color: lightskyblue;
+        fill: currentColor;
+    }
+}
