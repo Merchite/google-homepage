@@ -9,8 +9,7 @@ body {
 }
 
 .wrapper-content {
-    width: 1400px;
-    
+    max-width: 1400px;
     margin: 0 auto;
     overflow: auto;
     overflow-x: auto;
@@ -73,6 +72,12 @@ a:hover {
     margin: .5em;
 }
 
+.googleLogo {
+    margin-top: 5em;
+    width: 20%;
+    height: auto;
+}
+
 .search {
     width: 582px;
     border-radius: 5em;
@@ -108,7 +113,7 @@ a:hover {
 input[type=search] {
     width: 80%;
     background: #FFF;
-    padding: 1.5em;
+    padding: 1.4em;
     margin: 0;
     border: 0px !important;
 }
@@ -143,11 +148,13 @@ button[type=submit]:hover {
 }
 
 .left {
-    float: left
+    float: left;
+    padding: 0 .5em;
 }
 
 .right {
     float: right;
+    padding: 0 .5em;
 }
 
 @media only screen and (max-width: 479px) {
