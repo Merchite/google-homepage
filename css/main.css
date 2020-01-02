@@ -111,13 +111,19 @@ input[type=search] {
     border: 0px !important;
 }
 
-input[type=submit] {
+button[type=submit] {
     background: #f2f2f2;
     padding: 1em;
     margin: 1em .5em;
     border: 0px !important;
     border-radius: .5em;
     color: #5F6368;
+
+}
+
+button[type=submit]:hover {
+    border: 1px solid #DDD !important;
+    color: #000;
 
 }
 
