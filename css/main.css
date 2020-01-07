@@ -87,13 +87,7 @@ li {
     margin: 0 auto;
 }
 
-
-.search:before {
-    opacity: 0;
-    box-shadow: 1em 4em 12em rgba(0,0,0,.35);
-}
-
-.search:hover:before {
+#search .searchBar:hover, #search .searchBar:focus {
     box-shadow: 1em 4em 12em rgba(0,0,0,.35);
 }
 
